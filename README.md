@@ -50,21 +50,21 @@ Welcome to the **CSS Profile Card Project**! This project demonstrates how to cr
 
 ## Project Structure
 
-    ````bash
+  ```bash
+  css-profile-card/
   
-    css-profile-card/
+  ├── index.html          # Main HTML file
   
-    ├── index.html          # Main HTML file
-
-    ├── styles.css          # CSS styles for the profile card
+  ├── styles.css          # CSS styles for the profile card
   
-    ├── avatar.svg          # Avatar image for the profile
+  ├── avatar.svg          # Avatar image for the profile
   
-    ├── screenshot-01.png # Default view
+  ├── screenshot-01.png # Default view
   
-    └── screenshot-02.png # Hover effect view
-
-    └── README.md           # Project documentation
+  └── screenshot-02.png # Hover effect view
+  
+  └── README.md           # Project documentation
+  ```
 
 ## Technologies Used
 
