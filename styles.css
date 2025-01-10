@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    height: 100vh;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBEDB5;
+    font-family: "Abel", serif;
+}
+
+.card {
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+    height: 250px;
+    border-radius: 11px;
+    overflow: hidden;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+}
+
+.user-info {
+    width: 150px;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #95BFA9;
+}
+
+.user-info .avatar {
+    display: flex;
+}
+
+.user-info .avatar img {
+    max-width: 100%;
+    object-fit: cover;
+    border: 3px solid #7EA28F;
+    background-color: #B0D2E5;
+    border-radius: 50%;
+}
+
+.user-info .level,
+.user-info .points {
+    padding: 0.4rem 0.8rem;
+    background-color: #7EA28F;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.general {
+    position: relative;
+    width: 300px;
+    padding: 1.6rem;
+    background-color: #F9F9F9;
+}
+
+.general-title,
+.more-info__title {
+    margin-bottom: 1.6rem;
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1;
+    color: #000000;
+}
+
+.general-desc {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+.general-more {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.more-info {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 7;
+    width: 300px;
+    height: 100%;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #95BFA9;
+    border-left: 1px solid #7EA28F;
+    transition: clip-path .4s;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.card:hover .more-info {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.more-info__title {
+    color: #224C36;
+}
+
+.more-info .croods {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-info .croods:first-of-type {
+    margin-bottom: 0.8rem;
+}
+
+.more-info .croods span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #224C36;
+}
+
+.more-info .stats {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.more-info .stats .title {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.more-info .stats i {
+    margin-bottom: 0.4rem;
+    font-size: 2.4rem;
+    color: #224C36;
+}
+
+.more-info .stats .value {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #224C36;
+}
